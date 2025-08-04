@@ -1,0 +1,2 @@
+# MI-Adaptive-Label-Smoothing-Entropy-Aware-Augmentation-for-Image-Classification
+This project introduces a novel approach to data augmentation in deep learning for image classification. The core idea is to dynamically adjust the class confidence (via soft labels) in the cross-entropy loss based on the normalized mutual information (NMI) between an original image and its degraded (augmented) version.
