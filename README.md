@@ -8,8 +8,6 @@ The method is evaluated on the CIFAR-100 dataset, comparing IM against standard 
 
 Data augmentation enhances model robustness but often ignores information loss in degraded samples. IM addresses this by softening labels proportionally to entropy loss, quantified via NMI. This encourages calibrated predictions on noisy inputs, improving accuracy, robustness, and calibration.
 
-For details, see the paper LaTeX source: `Mutual_Information_Guided_Adaptive_Label_Smoothing.tex`.
-
 ## Requirements
 
 - Python 3.8+
