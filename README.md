@@ -30,21 +30,21 @@ Train models on CIFAR-100 using ResNet-18. All scripts use the same augmentation
 
 ### 1. Standard (Hard Labels)
 ```
-python train_standard_cifar.py
+python scripts/train_standard_cifar.py
 ```
 - Uses hard one-hot labels.
 - Saves model to `standard_model.pth`.
 
 ### 2. Label Smoothing (Fixed ε=0.1)
 ```
-python train_cifar_soft_labels.py
+python scripts/train_cifar_soft_labels.py
 ```
 - Applies uniform label smoothing.
 - Saves model to `ls_model.pth`.
 
 ### 3. Information Matching (IM)
 ```
-python train_IM_cifar.py
+python scripts/train_im_cifar.py
 ```
 - Adaptive smoothing via NMI.
 - Saves model to `im_model.pth`.
@@ -56,7 +56,7 @@ Training runs for up to 100 epochs with AdamW optimizer. Models are saved based 
 ### General Evaluation
 Run evaluation on trained models:
 ```
-python evaluate.py
+python scripts/evaluate_models.py
 ```
 - Computes top-1/5 accuracy, cross-entropy loss, ECE on clean test set.
 - Assesses robustness under degradations.
