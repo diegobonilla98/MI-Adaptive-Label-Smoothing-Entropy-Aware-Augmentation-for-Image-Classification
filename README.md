@@ -64,13 +64,6 @@ python evaluate.py
 - Assesses robustness under degradations.
 - Generates plots in `plots/` folder.
 
-### Interactive Evaluation
-For sliders to adjust distortion levels interactively:
-```
-python evaluate_model_sliders.py
-```
-- Visualizes predictions under varying degradations.
-
 ## Results
 
 Experiments on CIFAR-100 show IM outperforms baselines:
